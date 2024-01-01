@@ -1,0 +1,68 @@
+@media (min-width: 600px) {
+    body {
+        background-color: white;
+    }
+}
+@media (max-width: 599px) {
+    body {
+        background-color: aqua;
+    }
+}
+
+#container {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#container > h1 {
+    color: yellow;
+    text-align: center;
+    background-color: black;
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+}
+
+#head1 {
+    position: relative;
+    left: 5px;
+}
+
+#head2 {
+    position: relative;
+    left: 5px;
+}
+
+
+img {
+    margin: 20px;
+}
+
+a[href="https://www.espn.com/"]{
+    color: red;
+}
+
+button {
+    background-color: aqua;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: orange;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 5px;
+}
