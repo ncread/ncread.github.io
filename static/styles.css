@@ -1,0 +1,105 @@
+/* *{
+    margin: 0;
+    padding: 0;;
+} */
+@media (min-width: 600px) {
+    body {
+        background-color: rgb(237, 241, 241);
+    }
+}
+
+body {
+    margin: 0;
+}
+
+
+.logo {
+    position: absolute;
+    border: 1px black solid;
+    height: 2px;
+    width: auto;
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+}
+
+.container{
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    line-height: 40px;
+    /* border: 1px black solid; */
+}
+
+.header_container{
+    background-color: rgb(57,122,191);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 24px;
+}
+
+#contact {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    text-align: right;
+    /* margin-top: 0; */
+    /* border: 1px black solid; */
+    width: 300px;
+    height: 150px;
+}
+
+#contact p {
+    margin-top: 10px;
+    line-height: 8px;
+    font-size: 24px;
+    padding: 0;
+}
+
+#contact a {
+    color:yellow;
+}
+.website_list{
+    /* border: 1px black solid; */
+    padding: 20px;
+    margin: auto; /*centers the "box" the list is in and 
+                    makes left and right margins equal */
+    width: 30%;
+    padding-top: 0;
+    margin-top: 10px;
+    position: relative;
+    top: 2px;
+    margin-left: 5px;
+}
+
+.website_list h1{
+    color: rgb(57,122,191);
+    font-weight: bold;
+    text-align: center;
+}
+
+.website_list a{
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+}
+
+.website_list a:hover{
+    color: rgb(255, 0, 0);
+}
+
+.website_list a:active{
+    color: yellow;
+}
+
+.website_list ul{
+    line-height: 1.6em;
+    padding: 10px 5px 0px 10px;
+}
+
+.website_list li{
+    padding-bottom: 5px;
+    border-bottom: 2px dotted rgb(57,122,191);
+}
