@@ -1,0 +1,73 @@
+@media (min-width: 600px) {
+    body {
+        background-color: rgb(237, 241, 241);
+    }
+}
+
+body {
+    margin: 0;
+}
+
+
+.logo {
+    position: absolute;
+    border: 1px black solid;
+    height: 2px;
+    width: auto;
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+}
+
+.container{
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    line-height: 40px;
+    /* border: 1px black solid; */
+}
+
+.header_container{
+    background-color: rgb(57,122,191);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 24px;
+}
+
+#contact {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    text-align: right;
+    /* margin-top: 0; */
+    /* border: 1px black solid; */
+    width: 300px;
+    height: 150px;
+}
+
+#contact p {
+    margin-top: 10px;
+    line-height: 8px;
+    font-size: 24px;
+    padding: 0;
+}
+
+#contact a {
+    color:yellow;
+}
+
+iframe {
+    width: 99vw;
+    height: 100vh;
+    
+}
+
+iframe:focus {
+    outline: none;
+  }
+  
+  iframe[seamless] {
+    display: block;
+  }

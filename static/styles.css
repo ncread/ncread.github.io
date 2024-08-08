@@ -61,6 +61,56 @@ body {
 #contact a {
     color:yellow;
 }
+
+.greeting {
+    /* border: 1px black solid; */
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0px;
+}
+
+#Projects_header {
+    /* border: 1px black solid; */
+    text-align: center;
+    font-size: 20px;
+    color: rgb(57,122,191);
+    font-weight: bold;
+}
+
+
+.thesis_container{
+    /* border: 1px black solid; */
+    /* display: absolute; */
+    margin-left: 2px;
+
+}
+
+.thesis_container h2{
+    text-decoration: underline;
+}
+
+.thesis_container p{
+    display: inline-block;
+    /* border: 1px black solid; */
+    margin-left: 20px;
+    margin-right: 2px;
+    margin-top: 0;
+    color: black;
+    position: absolute;
+}
+
+#Extra_header{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(57,122,191);
+    font-weight: bold;
+}
+
+
+.col1 {
+    /* border: 1px black solid; */
+    display: flex;
+}
 .website_list{
     /* border: 1px black solid; */
     padding: 20px;
@@ -68,10 +118,11 @@ body {
                     makes left and right margins equal */
     width: 30%;
     padding-top: 0;
-    margin-top: 10px;
+    /* margin-top: 5px; */
     position: relative;
     top: 2px;
-    margin-left: 5px;
+    margin-left: 2px;
+    display: inline-block;
 }
 
 .website_list h1{
@@ -102,4 +153,16 @@ body {
 .website_list li{
     padding-bottom: 5px;
     border-bottom: 2px dotted rgb(57,122,191);
+}
+
+.data_area {
+    position: relative;
+    border: 1px black solid;
+    /* display: inline-block; */
+    width: 30%;
+    margin: auto;
+    top: 5px;
+    flex: 1;
+    margin-left: 10px;
+    margin-right: 10px;
 }
