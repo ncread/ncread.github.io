@@ -8,10 +8,8 @@ body {
     background-color: rgb(237, 241, 241);
 }
 
-
-
-
 .logo {
+    /* position: fixed; */
     position: absolute;
     border: 1px black solid;
     height: 2px;
@@ -28,13 +26,32 @@ body {
     margin: auto;
     overflow: hidden;
     line-height: 40px;
-    /* border: 1px black solid; */
+    /* border: 1px white solid; */
+    height: 275px;
 }
 
 .header_container{
-    background-color: rgb(57,122,191);
+    background-image: url("../assets/hubble.jpg");
     color: rgb(255, 255, 255);
     text-align: center;
+    font-size: 28px;
+    height: 300px;
+    /* border: 1px red solid; */
+}
+
+.header_container h1{
+    position: relative;
+    text-align: center;
+    top: 60px;
+    line-height: 1.2;
+    /* border: 1px white solid; */
+}
+
+.header_container h2{
+    /* border: 1px red solid; */
+    position: relative;
+    top: 30px;
+    height: 300px;
     font-size: 24px;
 }
 
@@ -57,22 +74,32 @@ body {
 }
 
 #contact a {
-    color:yellow;
+    /* color:yellow; */
+    color: white;
 }
 
 .greeting {
-    /* border: 1px black solid; */
+    /* border: 1px red solid; */
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 0px;
 }
 
 .section_header {
-    /* border: 1px black solid; */
+    /* background-image: url("../assets/hubble.jpg"); */
+    /* border: 1px red solid; */
     text-align: center;
     font-size: 20px;
-    color: rgb(57,122,191);
+    color: white;
+    background-color: rgb(117, 146, 178);
     font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+}
+
+.project_title{
+    /* border: 2px black solid; */
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .project_title a:visited{
@@ -80,32 +107,57 @@ body {
     text-decoration: none;
 }
 
+.skills{
+    line-height: 1px;
+    font-style: italic;
+    font-weight: normal;
+    /* border: 1px red solid; */
+}
+
+.skills h4{
+    line-height: 1px;
+    margin-left: 10px;
+}
+
+.skills h5{
+    line-height: 1px;
+    margin-left: 10px;
+}
+
 .thesis_container{
-    /* border: 1px black solid; */
+    /* border: 2px red solid; */
     /* display: absolute; */
     margin-left: 2px;
 
 }
 
-.thesis_container h2{
-    text-decoration: underline;
+.thesis_container a{
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 2px;
+    height: 100%;
 }
 
 .thesis_container p{
-    display: inline-block;
+    /* position: relative; */
+    /* display: inline-block; */
     /* border: 1px black solid; */
-    margin-left: 20px;
+    margin-left: 2px;
     margin-right: 2px;
-    margin-top: 0;
-    color: black;
-    position: absolute;
+    /* margin-top: 0; */
+    /* color: black; */
+    /* position: absolute; */
+    /* height: 50%; */
 }
+
+
 
 
 .col1 {
     /* border: 1px black solid; */
     display: flex;
 }
+
 .website_list{
     /* border: 1px black solid; */
     padding: 20px;
@@ -162,7 +214,21 @@ body {
     margin-right: 10px;
 }
 
+footer{
+    background-color: rgb(117, 146, 178);
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    height: 50px;
+    line-height: 50px;
+}
 
+/* ************************************************************************ */
+/* *********************************MOBILE********************************* */
+/* ************************************************************************ */
+
+/* @media (max-width: 480px) { */
 @media screen and (max-width: 480px) {
     body {
         background-color: rgb(237, 241, 241);
@@ -185,20 +251,40 @@ body {
         align-items: center;
         text-align: center;
         justify-content: center;
-
     }
 
     .container{
+        /* border: 1px white solid; */
+        height: 250px;
         line-height: 40px;
+    }
+
+    .header_container h1{
+        position: relative;
+        top: 85px;
+        font-size: 32px;
+        /* border: 1px white solid; */
+    }
+
+    .header_container h2{
+        position: relative;
+        top: 85px;
+        /* border: 1px white solid; */
+        height: 50px;
+        font-size: 24px;
     }
     
     .project_title{
         /* border: 1px black solid; */
+        line-height: 10px;
         color: black;
-        font-weight: bold;
         text-decoration: none;
-        text-align: left;
-        margin-left: 2px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .skills{
+        line-height: 15px;
+        font-weight: normal;
     }
 
     .project_title a:visited, a:link, a:active{
@@ -208,7 +294,7 @@ body {
 
     .thesis_container{
         all: revert;
-        /* border: 1px red solid; */
+        /* border: 2px red solid; */
         /* height: 300px; */
         margin-right: 2px;
     }

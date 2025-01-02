@@ -30,13 +30,34 @@ body {
     margin: auto;
     overflow: hidden;
     line-height: 40px;
+    height: 275px;
     /* border: 1px black solid; */
 }
 
 .header_container{
-    background-color: rgb(57,122,191);
+    background-image: url("../assets/court.jpg");
+    /* background-color: rgb(57,122,191); */
     color: rgb(255, 255, 255);
     text-align: center;
+    font-size: 28px;
+    height: 300px;
+    /* border: 1px black solid; */
+}
+
+.header_container h1{
+    position: relative;
+    /* align-self: center; */
+    text-align: center;
+    top: 60px;
+    line-height: 1.2;
+    /* border: 1px black solid; */
+}
+
+.header_container h2{
+    position: relative;
+    top: 30px;
+    /* border: 1px black solid; */
+    bottom: 2px;
     font-size: 24px;
 }
 
@@ -59,12 +80,14 @@ body {
 }
 
 #contact a {
-    color:yellow;
+    /* color:yellow; */
+    color: white;
 }
 
 iframe {
-    width: 99vw;
+    width: 98vw;
     height: 100vh;
+    display: block;
 }
 
 iframe:focus {
@@ -75,31 +98,75 @@ iframe[seamless] {
     display: block;
 }
 
+/* ************************************************************************ */
+/* *********************************MOBILE********************************* */
+/* ************************************************************************ */
+
 @media screen and (max-width: 480px) {
     body {
         background-color: rgb(237, 241, 241);
-        width: 100%;
+    } 
+
+    .header_container{
+        max-width: 100vw;
+        /* border: 1px red solid; */
     }
 
+    .container{
+        /* border: 1px white solid; */
+        height: 250px;
+        line-height: 35px;
+        width: 60%;
+        /* margin: auto; */
+        line-height: 40px;
+    }
+
+    .container h1{
+        font-size: 28px;
+    }
+
+    .container h2{
+        position: relative;
+        top: 50px;
+        /* border: 1px white solid; */
+        height: 50px;
+        font-size: 20px;
+    }
+
+    #contact{
+        /* border: 1px white solid; */
+        width: 200px;
+        height: 100px;
+    }
+
+    #contact p{
+        font-size: 20px;
+    }
+ 
 
     .thesis_iframe_container {
-        width: 100%;
+        display: block;
         height: 100vh;
         box-sizing: border-box;
-        padding: 10px;
+        padding: 0px;
+        /* max-width: 50vw; */
+        /* margin: auto; */
+        /* border: 2px red solid; */
     }
     
     .thesis_iframe {
-        /* width: 99vw; */
-        /* height: 100vh; */
-        max-height: 100%;
-        width: 100%;
-        border: none;
+        /* max-width: 100vw; */
+        position: absolute;
+        /* border: 2px red solid; */
+        -webkit-overflow-scrolling: touch;
+        /* overflow-y: scroll; */
+        /* overflow-x: hidden; */
     }
-
+/* 
     .thesis_warning_mobile {
+        border: 2px red solid;
         color: rgb(57,122,191);
         font-size: 18px;
-    }
+    } */
     
 }
