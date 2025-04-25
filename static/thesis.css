@@ -15,14 +15,14 @@ body {
 
 .logo {
     position: absolute;
-    border: 1px black solid;
-    height: 2px;
-    width: auto;
 }
 
 .logo img {
-    height: 60px;
-    width: 60px;
+    margin-top: 5px;
+    margin-left: 5px;
+    height: 50px;
+    width: 75px;
+    border-radius: 10px;
 }
 
 .container{
