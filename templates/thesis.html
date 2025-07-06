@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noah Thesis</title>
     <link rel="stylesheet" href="../static/thesis.css">
+
+    <link rel="icon" type="image/png" href="../assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="../assets/favicon/site.webmanifest" />
 </head>
 <body>
     <header class="header_container">
@@ -19,12 +25,17 @@
                 <a href="https://github.com/ncread" class="contact_element" target="_blank"><img src="../assets/github.png" alt="GitHub"></a>
             </div>
         </div>
+
         <div class="page_title">
             <h1>Tennis Match Forecasting</h1>
-            <h2>UCLA Master's Thesis</h2>
+            <!-- <h2>UCLA Master's Thesis</h2> -->
+        </div>
+
+        <div class="nav-bar">
+                <a href="https://noahcread.com" class="nav-link">Personal Projects</a>
+                <a href="about.html" class="nav-link">About Me</a>
         </div>
     </header>
-    
 
     <div class="thesis_iframe_container">
         <iframe class="thesis_iframe" src="../Read_Thesis_01.pdf#toolbar=0&scrollbar=1&navpanes=0&view=FitH" title="Noah Read Master's Thesis Project"></iframe>
@@ -33,6 +44,22 @@
     <div class="thesis_mobile">
         <a href="../Read_Thesis_01.pdf#toolbar=0&scrollbar=1&navpanes=0&view=FitH" target="_blank">Open Thesis PDF</a>
     </div>
+
+    <div class="thesis_description">
+        <p>My UCLA Master's Thesis <i>Forecasting the Outcomes of Professional Tennis Matches</i> was approved in March 2024.
+                                        ATP and WTA data was (and continues to be) scraped daily and an Adaptive Least Squares method was applied to the processed, time-variant 
+                                        data to ultimately generate match winning probabilities. <br><br>
+                                        
+                                        Any two names along with a corresponding tournament name can be inputted into the program, which takes into account each player's
+                                        time-variant historical statistics as well as unique information about the specific tournament (surface type, level, etc.) and outputs 
+                                        probabilities of winning for each player.</p>
+    </div>
+
+    <footer>
+        <div class="copyright">
+            Copyright &copy; 2025 Noah Read
+        </div>
+    </footer>
 
 </body>
 </html>

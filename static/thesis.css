@@ -2,19 +2,33 @@
     body {
         background-color: rgb(237, 241, 241);
     }
-
-    .thesis_warning_mobile {
-        visibility: hidden;
-    }
 }
 
 body {
     margin: 0;
 }
 
+.header_container{
+    display: flex;
+    position: relative;
+    background-image: url("../assets/court.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+    /* justify-content: center; */
+    font-size: 28px;
+    height: 300px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    /* border: 2px red solid; */
+}
 
 .logo {
     position: absolute;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.2);
 }
 
 .logo img {
@@ -25,41 +39,74 @@ body {
     border-radius: 10px;
 }
 
+.nav-bar {
+    position: absolute;
+    display: flex;
+    /* align-items: end; */
+    /* top: 250px; */
+    gap: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    bottom: 5px;
+    width: 100%;
+    /* border: 2px green solid; */
+    /* height: 50px; */
+}
+
+.nav-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #FF6F61;
+    color: white;
+    border-radius: 10px;
+    font-size: 22px;
+    margin: 2px;
+    height: 40px;
+    width: auto;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.6s;
+    transition: transform 1.0s ease;
+    /* border: 5px blue solid; */
+}
+
+.nav-link:hover {
+    background-color: #F7CAC9;
+    transform: scale(1.1);
+}
+
 .page_title {
-    width: 60%;
-    margin: auto;
+    display: flex;
+    /* position: relative; */
+    margin-top: 80px;
+    margin-left: 25%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
     overflow: hidden;
     line-height: 40px;
-    height: 275px;
+    /* height: 275px; */
+    color: white;
     /* border: 1px black solid; */
 }
 
-.header_container{
-    background-image: url("../assets/court.jpg");
-    /* background-color: rgb(57,122,191); */
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 28px;
-    height: 300px;
-    /* border: 1px black solid; */
-}
-
-.header_container h1{
+/* .header_container h1{
     position: relative;
-    /* align-self: center; */
     text-align: center;
     top: 60px;
     line-height: 1.2;
-    /* border: 1px black solid; */
 }
 
 .header_container h2{
     position: relative;
     top: 30px;
-    /* border: 1px black solid; */
     bottom: 2px;
     font-size: 24px;
-}
+} */
 
 .contact_container {
     position: absolute;
@@ -87,7 +134,7 @@ body {
 
 iframe {
     width: 98vw;
-    height: 100vh;
+    height: 98vh;
     display: block;
 }
 
@@ -103,13 +150,22 @@ iframe[seamless] {
     display: none;
 }
 
+.thesis_description {
+    display: none;
+}
+
+footer {
+    display: none;
+}
+
 /* ************************************************************************ */
 /* *********************************MOBILE********************************* */
 /* ************************************************************************ */
 
 @media screen and (max-width: 480px) {
     body {
-        background-color: rgb(237, 241, 241);
+        /* background-color: rgb(237, 241, 241); */
+        background-color: rgb(209, 209, 209);
     } 
 
     .header_container{
@@ -125,15 +181,11 @@ iframe[seamless] {
     .contact_container {
         flex-direction: column;
         align-items: flex-end;
-        /* border: 2px red solid; */
         gap: 5px;
         top: 10px;
     }
 
     .contact_element {
-        /* display: flex; */
-        /* height: 40px;
-        width: 200px; */
         font-size: 18px;
         font-weight: bold;
     }
@@ -154,14 +206,56 @@ iframe[seamless] {
         right: 5px;
     }
 
+    .nav-bar {
+        align-items: center;
+        /* top: 330px; */
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background-color: #F5DF4D; */
+        border: #FF6F61;
+        color: white;
+        border-radius: 10px;
+        font-size: 22px;
+        margin: 2px;
+        height: 40px;
+        width: auto;
+        padding: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.6s;
+    }
+
     /* .page_title {
-        border: 1px blue solid;
-        height: 250px;
-        line-height: 35px;
+        /* border: 1px blue solid; */
+        /* width: 65%; */
+        /* height: 350px; */
+        /* margin-top: 55px; */
+        /* line-height: 35px;
         width: 60%;
         line-height: 40px;
-        bottom: 0px;
-    } */
+        bottom: 0px; */
+    /* } */
+    .page_title {
+        /* display: flex; */
+        /* position: relative; */
+        margin-top: 150px;
+        margin-left: 25%;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        overflow: hidden;
+        line-height: 50px;
+        /* height: 275px; */
+        color: white;
+        /* border: 4px black solid; */
+}
 
     .header_container h1{
         font-size: 28px;
@@ -169,21 +263,21 @@ iframe[seamless] {
     }
 
     .header_container h2{
-        position: relative;
+        display: none;
+        /* position: relative;
         top: 120px;
-        /* border: 1px white solid; */
+        border: 1px white solid;
         height: 50px;
-        font-size: 24px;
-    }
-
-    #contact{
-        /* border: 1px white solid; */
-        width: 200px;
-        height: 100px;
+        font-size: 24px; */
     }
 
     #contact p{
         font-size: 20px;
+    }
+
+    .thesis_description h1 {
+        font-size: 24px;
+        color: black;
     }
 
     .thesis_iframe_container {
@@ -191,12 +285,48 @@ iframe[seamless] {
     }
 
     .thesis_mobile {
-        display: block;
-        height: 100vh;
-        box-sizing: border-box;
+        display: flex;
+        /* display: block; */
+        /* box-sizing: border-box; */
         padding: 0px;
-        /* max-width: 50vw; */
-        /* margin: auto; */
+        width: 100vw;
+    }
+
+    .thesis_mobile a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 28px;
+        color: rgb(0,133,102);
+        border-radius: 20px;
+        text-align: center;
+        margin: auto;
+        width: 50vw;
+        margin-top: 5px;
+        padding: 20px;
+        background-color: #f5d1d1;
+        transition: background-color 0.1s;
+    }
+
+    .thesis_mobile a:hover {
+        background-color: #F7CAC9;
+    }
+
+    .thesis_description {
+        display: flex;
+        font-size: 20px;
+        text-align: center;
+        margin: 5px;
         /* border: 2px red solid; */
+    }
+
+    footer {
+        display: flex;
+        background-color: rgb(0, 133, 102);
+        color: white;
+        font-size: 16px;
+        text-align: center;
+        justify-content: center;
+        height: 50px;
+        line-height: 50px;
     }
 }
