@@ -249,16 +249,17 @@ footer {
         height: 100px;
         justify-content: center;
         align-items: center;
-        width: 60%;
+        width: 50%;
         overflow: hidden;
         line-height: 50px;
         /* height: 275px; */
         color: white;
+        font-weight: bold;
         /* border: 4px black solid; */
 }
 
     .header_container h1{
-        font-size: 28px;
+        font-size: 32px;
         top: 100px;
     }
 

@@ -113,6 +113,7 @@ body {
     column-gap: 0px;
     gap: 20px;
     padding: 2px;
+    margin: 2px;
     /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
     grid-template-columns: 300px 300px 300px 300px;
     /* border: 2px red solid; */
@@ -127,22 +128,36 @@ body {
     width: 100%;
     border-radius: 5px;
     transition: transform 0.3s ease;
+    color: black;
     /* border: 2px red solid; */
 }
 
 .project_card:hover {
     transform: scale(1.1);
+    background-color: rgb(185, 208, 234);
+    transition: background-color 0.5s ease;
 }
 
 .project_title{
     padding: 3px;
+    text-decoration: none;
     /* border: 2px black solid; */
     /* font-family: 'Times New Roman', Times, serif; */
 }
 
-.project_title a {
-    color: blue;
-    text-decoration: underline;
+.project_title a:link {
+    text-decoration: none;
+    color: rgb(15, 96, 182);
+}
+
+.project_title a:visited {
+    text-decoration: none;
+    color: rgb(15, 96, 182);
+}
+
+.project_title a:hover {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .skills{
