@@ -145,6 +145,10 @@ body {
     /* font-family: 'Times New Roman', Times, serif; */
 }
 
+.project_title h2 {
+    font-size: 28px;
+}
+
 .project_title a:link {
     text-decoration: none;
     color: rgb(15, 96, 182);
