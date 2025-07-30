@@ -339,7 +339,8 @@ footer{
     }
 
     .project_title h2 {
-        color: white
+        color: white;
+        line-height: 25px;
     }
 
     .project_title a:visited {
