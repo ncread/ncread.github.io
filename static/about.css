@@ -3,6 +3,11 @@ body {
     background-color: rgb(237, 241, 241);
 }
 
+a {
+    color: blue;
+    text-decoration: none;
+}
+
 .header_container{
     position: relative;
     background-image: url("../assets/mb2.jpg");
@@ -96,13 +101,38 @@ body {
     line-height: 50px;
 }
 
-.about {
-    padding: 5px;
-    font-size: 20px;
-    /* border: 2px blue solid; */
-    text-align: center;
+.about_me_content {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    height: auto;
+    /* border: 5px green solid; */
 }
 
+#slu_logo {
+    height: 200px;
+    width: 200px;
+    /* border: 2px red solid; */
+}
+
+#ucla_logo_desktop {
+    height: 200px;
+    width: 200px;
+    /* border: 2px red solid; */
+}
+
+#ucla_logo_mobile {
+    display: none;
+}
+
+.about_me_text {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+    font-size: 28px;
+    padding: 20px;
+}
 
 footer{
     background-color: rgb(117, 146, 178);
@@ -113,9 +143,6 @@ footer{
     height: 50px;
     line-height: 50px;
 }
-
-
-
 /* ************************************************************************ */
 /* *********************************MOBILE********************************* */
 /* ************************************************************************ */
@@ -126,6 +153,11 @@ footer{
         background-color: rgb(208, 208, 208);
         /* background-color: rgb(79, 79, 80); */
         width: 100%;
+    }
+
+    a {
+        color: blue;
+        text-decoration: none;
     }
 
     .header_container{
@@ -210,59 +242,49 @@ footer{
         transition: background-color 0.6s;
     }
 
-    .container{
-        /* border: 1px white solid; */
-        height: 250px;
-        line-height: 40px;
+    .about_me_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
-    .project_title{
-        /* border: 1px black solid; */
-        line-height: 10px;
-        color: black;
-        text-decoration: none;
-        font-family: 'Times New Roman', Times, serif;
+    #slu_logo {
+        height: 150px;
+        width: 150px;
     }
 
-    .skills{
-        line-height: 15px;
-        font-weight: normal;
+    #ucla_logo_mobile {
+        display: inline-block;
+        height: 150px;
+        width: 150px;
     }
 
-    /* .project_title a:visited, a:link, a:active{
-        color: blue;
-    } */
+    .logo_container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        width: 100%;
+        gap: 40px;
 
+    }
 
-    .thesis_container{
-        all: revert;
+    .logo_container img {
+        display: flex;
+        height: 40px;
+        width: 40px;
+        gap: 2px;
+    }
+
+    .about_me_text {
+        width: 90%;
+        text-align: center;
         /* border: 2px red solid; */
-        /* height: 300px; */
-        margin-right: 2px;
     }
 
-    .thesis_container img{
-        all: revert;
-        float: left;
-        /* border: 1px blue solid; */
-        height: 100px;
-        margin: 2px;
-    }
-
-    #thesis_description{
-        all: revert;
-        text-align: justify;
-        font-size: 16px;
-        margin-top: 1px;
-        margin-right: 2px;
-        margin-left: 2px;
-        /* border: 1px black solid; */
-        /* width: fit-content; */
-        /* overflow: hidden; */
-    }
-
-    .about {
-        line-height: 25px;
+    #ucla_logo_desktop {
+        display: none;
     }
 
     footer{

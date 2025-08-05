@@ -84,29 +84,17 @@ body {
     margin-top: 80px;
     margin-left: 25%;
     height: 100px;
+    /* height: 15vh; */
     justify-content: center;
     align-items: center;
-    width: 50%;
-    overflow: hidden;
-    line-height: 40px;
+    width: 50vw;
+    line-height: 50px;
     /* height: 275px; */
     color: white;
-    /* border: 1px black solid; */
+    /* border: 2px red solid; */
 }
 
-/* .header_container h1{
-    position: relative;
-    text-align: center;
-    top: 60px;
-    line-height: 1.2;
-}
 
-.header_container h2{
-    position: relative;
-    top: 30px;
-    bottom: 2px;
-    font-size: 24px;
-} */
 
 .contact_container {
     position: absolute;
@@ -130,6 +118,10 @@ body {
 
 .contact_element:hover {
     transform: scale(1.2);
+}
+
+.thesis_iframe_container {
+    width: 100%;
 }
 
 iframe {
