@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/static/guide.css">
+
+    <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+</head>
+
+<body>
+    <header class="header_container">
+        <div class="logo">
+            <a href="https://noahcread.com"><img src="/assets/nrlogo2.png" alt="home"></a>
+        </div>
+    </header>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/templates/guides.html">Back to Guides</a>
+    </nav>
+    <!-- <h1>{{ page.title }}</h1> -->
+    <article class="guide-content">
+        {{ content }}
+    </article>
+
+    <footer>
+        <div class="copyright">
+            Copyright &copy; 2026 Noah Read
+        </div>
+    </footer>
+
+</body>
+
+</html>
