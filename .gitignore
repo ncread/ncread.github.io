@@ -1,2 +1,13 @@
 *.pdf
 *.txt
+
+tennis_blog.html
+stringing.css
+stringing.html
+
+.bundle/
+vendor/
+Gemfile
+Gemfile.lock
+
+.vscode/
