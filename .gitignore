@@ -11,3 +11,4 @@ Gemfile
 Gemfile.lock
 
 .vscode/
+_site/
