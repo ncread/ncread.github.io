@@ -34,7 +34,7 @@
     </header>       
 
     <div class="section_header">
-        <h1> -- Guides --</h1>
+        <h1>Guides</h1>
     </div>
 
     <div class="purpose">
@@ -58,18 +58,18 @@
                 </div>
             </div>
 
-            <a class="thesis_img" href="/guides/daemons.html"><img src="/assets/daemons.jpg" alt="Linux Background Processes"></a>
+            <a class="thesis_img" href="/guides/daemons"><img src="/assets/daemons.jpg" alt="Linux Background Processes"></a>
         </div>
 
         <div class="project_card">
             <div class="project_title">
-                <h2><a href="guides.html">Uv Package Manager</a></h2>
+                <h2><a href="/guides/uv">Uv Package Manager</a></h2>
                 <div class="skills">
-                     <h4>Coming Soon</h4>
+                     <h4>How to use it, common and helpful commands, and much more</h4>
                 </div>
             </div>
 
-            <a class="thesis_img" href="guides.html"><img src="/assets/uv2.png" alt="Astral Logo"></a>
+            <a class="thesis_img" href="/guides/uv"><img src="/assets/uv2.png" alt="Astral Logo"></a>
         </div>
 
     </div>
@@ -83,5 +83,16 @@
             Copyright &copy; 2026 Noah Read
         </div>
     </footer>
+
+    <script>
+        const currentPath = window.location.pathname;
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            const linkUrl = new URL(link.href);
+            if (linkUrl.pathname === currentPath) {
+            link.classList.add('active');
+            }
+        });
+    </script>
 </body>
 </html>

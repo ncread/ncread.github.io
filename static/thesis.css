@@ -74,8 +74,15 @@ body {
 }
 
 .nav-link:hover {
-    background-color: #F7CAC9;
+    background-color: rgb(117, 146, 178);
     transform: scale(1.1);
+}
+
+.nav-link.active {
+  color: white;
+  background-color: rgb(117, 146, 178);
+  font-weight: 600;
+  border-bottom: 2px solid black;
 }
 
 .page_title {

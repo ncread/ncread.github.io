@@ -6,6 +6,7 @@
 body {
     margin: 0;
     background-color:rgb(230, 230, 230);
+    /* background-color: #2b2b2b; */
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
@@ -68,12 +69,19 @@ body {
 }
 
 .nav-link:hover {
-    background-color: #F7CAC9;
+    background-color: rgb(117, 146, 178);
     transform: scale(1.1);
 }
 
-.nav-link:active {
+/* .nav-link:active {
     background-color: #F7CAC9;
+} */
+
+.nav-link.active {
+  color: white;
+  background-color: rgb(117, 146, 178);
+  font-weight: 600;
+  border-bottom: 2px solid black;
 }
 
 .contact_container {
@@ -248,8 +256,7 @@ footer {
 /* @media (max-width: 480px) { */
 @media screen and (max-width: 480px) {
     body {
-        background-color: rgb(237, 241, 241);
-        /* background-color: rgb(208, 208, 208); */
+        /* background-color: rgb(237, 241, 241); */
         width: 100%;
         overflow-x: hidden;
         margin: 0;

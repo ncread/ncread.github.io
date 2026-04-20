@@ -62,5 +62,16 @@
         </div>
     </footer>
 
+    <script>
+        const currentPath = window.location.pathname;
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            const linkUrl = new URL(link.href);
+            if (linkUrl.pathname === currentPath) {
+            link.classList.add('active');
+            }
+        });
+    </script>
+
 </body>
 </html>
