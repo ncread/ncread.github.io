@@ -5,7 +5,7 @@ permalink: /guides/daemons
 --- 
 
 # Daemons
-Written 20260219 | Updated 20260223
+Written 2026/02/19 | Updated 2026/02/23
 
 ***
 
