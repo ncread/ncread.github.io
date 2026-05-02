@@ -33,10 +33,30 @@
         <div class="nav-bar">
                 <a href="https://noahcread.com" class="nav-link">Projects</a>
                  <a href="guides.html" class="nav-link">Guides</a>
-                 <!-- <a href="misc.html" class="nav-link">Misc.</a> -->
                 <a href="about.html" class="nav-link">About</a>
         </div>
     </header>
+
+    <div class="purpose">
+        <h3>
+            Tennis is a fascinating sport to analyze and statistically model. Not only is it a zero-sum game, there are also key pieces of information known 
+            before each match starts that may <i>significantly</i> influence the outcome. For example, we know what level the match is (lower level 
+            Challenger event, ATP/WTA 1000, Grand Slam, etc.) and we know what surface the match will be played on (indoor/outdoor hard, clay, grass). Roger
+            Federer would have a higher probability of beating Rafael Nadal on grass, and the opposite on clay. Paired with
+            time-variant historical information regarding each player's stats at the given level on the given surface, a forecast isn't a total toss-up.
+            <br><br>
+            My Master's thesis strives to create an Adaptive Least Squares forecasting model with Kalman filtering to generate probabilities of winning for professional 
+            tennis players. To do so, a statistical profile of each player was created, allowing each unit of observation (each athlete) to contain features pertaining to 
+            his/her stats as well as the stats of that athlete's historical opponents. This basically serves as "what have I averaged, and what has my upcoming opponent 
+            averaged." Features involving what each player (& the respective opponent) would give up on average were also included. With 4x the baseline number of features, 
+            the feature set was robust.
+            <br><br>
+            The model ultimately achieved an accuracy a few percentage points higher than if winners were chosen strictly by rankings (which is still a fairly strong method). 
+            Any two names along with a corresponding tournament name can be inputted into a program, which ingests two competing player names as well as unique information about 
+            the specific tournament (surface type, level, etc.) and outputs probabilities of winning for each player.Both R and Python were leveraged to bring this project past 
+            the finish line. The entire official document is displayed below:
+        </h3>
+    </div>
 
     <div class="thesis_iframe_container">
         <iframe class="thesis_iframe" src="../Read_Thesis_01.pdf#toolbar=0&scrollbar=1&navpanes=0&view=FitH" title="Noah Read Master's Thesis Project"></iframe>
@@ -47,13 +67,24 @@
     </div>
 
     <div class="thesis_description">
-        <p>My UCLA Master's Thesis <i>Forecasting the Outcomes of Professional Tennis Matches</i> was approved in March 2024.
-                                        ATP and WTA data was (and continues to be) scraped daily and an Adaptive Least Squares method was applied to the processed, time-variant 
-                                        data to ultimately generate match winning probabilities. <br><br>
-                                        
-                                        Any two names along with a corresponding tournament name can be inputted into the program, which takes into account each player's
-                                        time-variant historical statistics as well as unique information about the specific tournament (surface type, level, etc.) and outputs 
-                                        probabilities of winning for each player.</p>
+        <h3>
+            Tennis is a fascinating sport to analyze and statistically model. Not only is it a zero-sum game, there are also key pieces of information known 
+            before each match starts that may <i>significantly</i> influence the outcome. For example, we know what level the match is (lower level 
+            Challenger event, ATP/WTA 1000, Grand Slam, etc.) and we know what surface the match will be played on (indoor/outdoor hard, clay, grass). Roger
+            Federer would have a higher probability of beating Rafael Nadal on grass, and the opposite on clay. Paired with
+            time-variant historical information regarding each player's stats at the given level on the given surface, a forecast isn't a total toss-up.
+            <br><br>
+            My Master's thesis strives to create an Adaptive Least Squares forecasting model with Kalman filtering to generate probabilities of winning for professional 
+            tennis players. To do so, a statistical profile of each player was created, allowing each unit of observation (each athlete) to contain features pertaining to 
+            his/her stats as well as the stats of that athlete's historical opponents. This basically serves as "what have I averaged, and what has my upcoming opponent 
+            averaged." Features involving what each player (& the respective opponent) would give up on average were also included. With 4x the baseline number of features, 
+            the feature set was robust.
+            <br><br>
+            The model ultimately achieved an accuracy a few percentage points higher than if winners were chosen strictly by rankings (which is still a fairly strong method). 
+            Any two names along with a corresponding tournament name can be inputted into a program, which ingests two competing player names as well as unique information about 
+            the specific tournament (surface type, level, etc.) and outputs probabilities of winning for each player. Both R and Python were leveraged to bring this project past 
+            the finish line.
+        </h3>   
     </div>
 
     <footer>
