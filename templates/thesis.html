@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noah Thesis</title>
-    <link rel="stylesheet" href="../static/thesis.css">
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="/static/thesis.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <link rel="icon" type="image/png" href="../assets/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg" />
@@ -14,95 +18,103 @@
 </head>
 <body>
     <header class="header_container">
-        <div class="logo">
-            <a href="https://noahcread.com"><img src="../assets/nrlogo2.png" alt="home"></a>
-        </div>
+        <div class="header_overlay"></div>
 
-        <div class="contact_container">
-            <a href="mailto:noahcread@gmail.com" class="contact_element">noahcread@gmail.com</a>
-            <div class="icons">
-                <a href="https://www.linkedin.com/in/noahreadnr/" class="contact_element" target="_blank"><img src="../assets/linkedin.png" alt="LinkedIn"></a>
-                <a href="https://github.com/ncread" class="contact_element" target="_blank"><img src="../assets/github.png" alt="GitHub"></a>
+        <div class="header_top">
+            <div class="logo">
+                <a href="https://noahcread.com"><img src="/assets/nrlogo2.png" alt="home"></a>
+            </div>
+
+            <div class="header_right">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <span class="toggle-icon sun">🌞</span>
+                    <span class="toggle-icon moon">🌙</span>
+                </button>
+                <div class="contact_container">
+                    <a href="mailto:noahcread@gmail.com" class="contact_element email-link">noahcread@gmail.com</a>
+                    <div class="icons">
+                        <a href="https://www.linkedin.com/in/noahreadnr/" class="contact_element icon-link" target="_blank" aria-label="LinkedIn">
+                            <img src="/assets/linkedin.png" alt="LinkedIn">
+                        </a>
+                        <a href="https://github.com/ncread" class="contact_element icon-link" target="_blank" aria-label="GitHub">
+                            <img src="/assets/github.png" alt="GitHub">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="page_title">
-            <h1>Tennis Match<br>Forecasting</h1>
+        <div class="header_content">
+            <h1 class="header_name">Tennis Match Forecasting</h1>
         </div>
 
-        <div class="nav-bar">
-                <a href="https://noahcread.com" class="nav-link">Projects</a>
-                 <a href="guides.html" class="nav-link">Guides</a>
-                <a href="about.html" class="nav-link">About</a>
-        </div>
+        <nav class="nav-bar">
+            <a href="https://noahcread.com" class="nav-link">Projects</a>
+            <a href="/templates/guides.html" class="nav-link">Guides</a>
+            <a href="/templates/about.html" class="nav-link">About</a>
+        </nav>
     </header>
 
-    <div class="purpose">
-        <h3>
-            Tennis is a fascinating sport to analyze and statistically model. Not only is it a zero-sum game, there are also key pieces of information known 
-            before each match starts that may <i>significantly</i> influence the outcome. For example, we know what level the match is (lower level 
-            Challenger event, ATP/WTA 1000, Grand Slam, etc.) and we know what surface the match will be played on (indoor/outdoor hard, clay, grass). Roger
-            Federer would have a higher probability of beating Rafael Nadal on grass, and the opposite on clay. Paired with
-            time-variant historical information regarding each player's stats at the given level on the given surface, a forecast isn't a total toss-up.
-            <br><br>
-            My Master's thesis strives to create an Adaptive Least Squares forecasting model with Kalman filtering to generate probabilities of winning for professional 
-            tennis players. To do so, a statistical profile of each player was created, allowing each unit of observation (each athlete) to contain features pertaining to 
-            his/her stats as well as the stats of that athlete's historical opponents. This basically serves as "what have I averaged, and what has my upcoming opponent 
-            averaged." Features involving what each player (& the respective opponent) would give up on average were also included. With 4x the baseline number of features, 
-            the feature set was robust.
-            <br><br>
-            The model ultimately achieved an accuracy a few percentage points higher than if winners were chosen strictly by rankings (which is still a fairly strong method). 
-            Any two names along with a corresponding tournament name can be inputted into a program, which ingests two competing player names as well as unique information about 
-            the specific tournament (surface type, level, etc.) and outputs probabilities of winning for each player.Both R and Python were leveraged to bring this project past 
-            the finish line. The entire official document is displayed below:
-        </h3>
-    </div>
+    <main>
+        <div class="thesis_mobile">
+            <a href="../Read_Thesis_01.pdf#toolbar=0&scrollbar=1&navpanes=0&view=FitH" target="_blank">Open Thesis PDF</a>
+        </div>
 
-    <div class="thesis_iframe_container">
-        <iframe class="thesis_iframe" src="../Read_Thesis_01.pdf#toolbar=0&scrollbar=1&navpanes=0&view=FitH" title="Noah Read Master's Thesis Project"></iframe>
-    </div>
+        <div class="purpose">
+            <h3>
+                Tennis is a fascinating sport to analyze and statistically model. Not only is it a zero-sum game, there are also key pieces of information known 
+                before each match starts that may <i>significantly</i> influence the outcome. For example, we know what level the match is 
+                (Challenger event, ATP/WTA 1000, Grand Slam, etc.) and we know what surface the match will be played on (indoor/outdoor hard, clay, grass). Roger
+                Federer would have a higher probability of beating Rafael Nadal on grass, and the opposite on clay. Paired with
+                time-variant historical information regarding each player's stats at the given level on the given surface, a forecast isn't necessarily a total toss-up.
+                <br><br>
+                My Master's thesis strives to create an Adaptive Least Squares forecasting model with Kalman filtering to generate probabilities of winning for professional 
+                tennis players. To do so, a statistical profile of each player was created, allowing each unit of observation (each athlete) to contain features pertaining to 
+                his/her stats as well as the stats of that athlete's historical opponents. This basically serves as "what have I averaged, and what has my upcoming opponent 
+                averaged." Features involving what each player (& the respective opponent) would give up on average were also included. With 4x the baseline number of features, 
+                the feature set was robust.
+                <br><br>
+                The model ultimately achieved an accuracy a few percentage points higher than if winners were chosen strictly by rankings (which is still a fairly strong method). 
+                Any two names along with a corresponding tournament name can be inputted into a program, which ingests two competing player names as well as unique information about 
+                the specific tournament (surface type, level, etc.) and outputs probabilities of winning for each player. Both R and Python were leveraged to bring this project past 
+                the finish line. The entire official document is displayed below.
+            </h3>
+        </div>
 
-    <div class="thesis_mobile">
-        <a href="../Read_Thesis_01.pdf#toolbar=0&scrollbar=1&navpanes=0&view=FitH" target="_blank">Open Thesis PDF</a>
-    </div>
-
-    <div class="thesis_description">
-        <h3>
-            Tennis is a fascinating sport to analyze and statistically model. Not only is it a zero-sum game, there are also key pieces of information known 
-            before each match starts that may <i>significantly</i> influence the outcome. For example, we know what level the match is (lower level 
-            Challenger event, ATP/WTA 1000, Grand Slam, etc.) and we know what surface the match will be played on (indoor/outdoor hard, clay, grass). Roger
-            Federer would have a higher probability of beating Rafael Nadal on grass, and the opposite on clay. Paired with
-            time-variant historical information regarding each player's stats at the given level on the given surface, a forecast isn't a total toss-up.
-            <br><br>
-            My Master's thesis strives to create an Adaptive Least Squares forecasting model with Kalman filtering to generate probabilities of winning for professional 
-            tennis players. To do so, a statistical profile of each player was created, allowing each unit of observation (each athlete) to contain features pertaining to 
-            his/her stats as well as the stats of that athlete's historical opponents. This basically serves as "what have I averaged, and what has my upcoming opponent 
-            averaged." Features involving what each player (& the respective opponent) would give up on average were also included. With 4x the baseline number of features, 
-            the feature set was robust.
-            <br><br>
-            The model ultimately achieved an accuracy a few percentage points higher than if winners were chosen strictly by rankings (which is still a fairly strong method). 
-            Any two names along with a corresponding tournament name can be inputted into a program, which ingests two competing player names as well as unique information about 
-            the specific tournament (surface type, level, etc.) and outputs probabilities of winning for each player. Both R and Python were leveraged to bring this project past 
-            the finish line.
-        </h3>   
-    </div>
+        <div class="thesis_iframe_container">
+            <iframe src="../Read_Thesis_01.pdf#toolbar=0&scrollbar=1&navpanes=0&view=FitH" title="Noah Read Master's Thesis"></iframe>
+        </div>
+    </main>
 
     <footer>
         <div class="copyright">
-            Copyright &copy; 2025 Noah Read
+            Copyright &copy; 2026 Noah Read
         </div>
     </footer>
 
     <script>
-        const currentPath = window.location.pathname;
+        // Dark mode toggle
+        const toggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
 
+        const saved = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', saved);
+
+        toggle.addEventListener('click', () => {
+            const current = html.getAttribute('data-theme');
+            const next = current === 'light' ? 'dark' : 'light';
+            html.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+        });
+
+        // Active nav link
+        const currentPath = window.location.pathname;
         document.querySelectorAll('.nav-link').forEach(link => {
             const linkUrl = new URL(link.href);
             if (linkUrl.pathname === currentPath) {
-            link.classList.add('active');
+                link.classList.add('active');
             }
         });
     </script>
-
 </body>
 </html>

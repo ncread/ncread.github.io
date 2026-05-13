@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noah About</title>
-    <link rel="stylesheet" href="../static/about.css">
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="/static/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <link rel="icon" type="image/png" href="../assets/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg" />
@@ -14,59 +18,96 @@
 </head>
 <body>
     <header class="header_container">
-        <div class="logo">
-            <a href="https://noahcread.com"><img src="../assets/nrlogo2.png" alt="home"></a>
-        </div>
-        <div class="nav-bar">
-                <a href="https://noahcread.com" class="nav-link">Projects</a>
-                <!-- <a href="stringing.html" class="nav-link">Stringing</a> -->
-                <a href="guides.html" class="nav-link">Guides</a>
-                <!-- <a href="misc.html" class="nav-link">Misc.</a> -->
-                <a href="about.html" class="nav-link">About</a>
-        </div>
-        <div class="contact_container">
-            <a href="mailto:noahcread@gmail.com" class="contact_element">noahcread@gmail.com</a>
-            <div class="icons">
-                <a href="https://www.linkedin.com/in/noahreadnr/" class="contact_element" target="_blank"><img src="../assets/linkedin.png" alt="LinkedIn"></a>
-                <a href="https://github.com/ncread" class="contact_element" target="_blank"><img src="../assets/github.png" alt="GitHub"></a>
+        <div class="header_overlay"></div>
+
+        <div class="header_top">
+            <div class="logo">
+                <a href="https://noahcread.com"><img src="/assets/nrlogo2.png" alt="home"></a>
+            </div>
+
+            <div class="header_right">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <span class="toggle-icon sun">🌞</span>
+                    <span class="toggle-icon moon">🌙</span>
+                </button>
+                <div class="contact_container">
+                    <a href="mailto:noahcread@gmail.com" class="contact_element email-link">noahcread@gmail.com</a>
+                    <div class="icons">
+                        <a href="https://www.linkedin.com/in/noahreadnr/" class="contact_element icon-link" target="_blank" aria-label="LinkedIn">
+                            <img src="/assets/linkedin.png" alt="LinkedIn">
+                        </a>
+                        <a href="https://github.com/ncread" class="contact_element icon-link" target="_blank" aria-label="GitHub">
+                            <img src="/assets/github.png" alt="GitHub">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-    </header>
 
-    <div class="section_header">
-        <h1>About Me</h1>
-    </div>
-
-    <div class="about_me_content">
-        <div class="logo_container">
-            <img id="slu_logo" src="../assets/slu_logo.jpg" alt="SLU Billiken">
-            <img id="ucla_logo_mobile" src="../assets/ucla_logo.jpg" alt="UCLA Bruin">
+        <div class="header_content">
+            <p class="header_eyebrow">Portfolio</p>
+            <h1 class="header_name">Noah Read</h1>
+            <p class="header_tagline">Data Scientist &amp; Engineer</p>
         </div>
 
-        <p class="about_me_text">Hello! My name is Noah. I have a B.S. in Biomedical Engineering from Saint Louis University and a M.S. in Applied Statistics & Data Science from UCLA. 
-            I spent 6+ years as an engineer in the healthcare industry, pivoted to a data analytics role in the sports industry, and presently work with Major League Baseball (Go Cubs).
-            I possess a deep drive to shift to a data scientist/data engineer position, ideally within the environmental/climate, sports, or aerospace industries.
-            <br><br>
-            This website contains some projects I've worked on and guides that I've written. If you'd like to chat about a project or guide (questions, comments, feedback and advice are all welcome) feel free to 
-            <a href="mailto:noahcread@gmail.com" target="_blank"> send me an email</a>. Links to my <a href="https://github.com/ncread" target="_blank">GitHub</a> 
-            and <a href="https://www.linkedin.com/in/noahreadnr/" target="_blank">LinkedIn</a> profiles are also present.
-            Thanks!</p>
-        <img id="ucla_logo_desktop" src="../assets/ucla_logo.jpg" alt="UCLA Bruin">
-    </div>
-    <br><br><br>
+        <nav class="nav-bar">
+            <a href="https://noahcread.com" class="nav-link">Projects</a>
+            <a href="/templates/guides.html" class="nav-link">Guides</a>
+            <a href="/templates/about.html" class="nav-link">About</a>
+        </nav>
+    </header>
 
-    <br><br><br>
+    <main>
+        <div class="section_header">
+            <h2>About Me</h2>
+        </div>
+
+        <div class="about_me_content">
+            <div class="logo_container">
+                <img id="slu_logo" src="../assets/slu_logo.jpg" alt="SLU Billiken">
+                <img id="ucla_logo_mobile" src="/assets/ucla_logo.jpg" alt="UCLA Bruin">
+            </div>
+
+            <p class="about_me_text">Hello! My name is Noah. I have a B.S. in Biomedical Engineering from Saint Louis University and a M.S. in Applied Statistics & Data Science from UCLA. 
+                I spent 6+ years as an engineer in the healthcare industry, pivoted to a data analytics role with the United States Tennis Association, and currently work with Major League Baseball.
+                I possess a deep drive to shift to a data scientist/data engineer position, ideally within the environmental/climate, sports, or aerospace industries.
+                <br><br>
+                This website contains some projects I've worked on and guides that I've written. If you'd like to chat about a project or guide (questions, comments, feedback and advice are all welcome) feel free to 
+                <a href="mailto:noahcread@gmail.com" target="_blank"> send me an email</a>. Links to my <a href="https://github.com/ncread" target="_blank">GitHub</a> 
+                and <a href="https://www.linkedin.com/in/noahreadnr/" target="_blank">LinkedIn</a> profiles are also present.
+                Thanks!</p>
+            <img id="ucla_logo_desktop" src="/assets/ucla_logo.jpg" alt="UCLA Bruin">
+        </div>
+    
+    </main>
+
     <footer>
-        Copyright &copy; 2026 Noah Read
+        <div class="copyright">
+            Copyright &copy; 2026 Noah Read
+        </div>
     </footer>
 
-    <script>
-        const currentPath = window.location.pathname;
+<script>
+        // Dark mode toggle
+        const toggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
 
+        const saved = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', saved);
+
+        toggle.addEventListener('click', () => {
+            const current = html.getAttribute('data-theme');
+            const next = current === 'light' ? 'dark' : 'light';
+            html.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+        });
+
+        // Active nav link
+        const currentPath = window.location.pathname;
         document.querySelectorAll('.nav-link').forEach(link => {
             const linkUrl = new URL(link.href);
             if (linkUrl.pathname === currentPath) {
-            link.classList.add('active');
+                link.classList.add('active');
             }
         });
     </script>
