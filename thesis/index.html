@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noah Guides</title>
+    <title>Noah Thesis</title>
     <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="/static/thesis.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -44,62 +45,44 @@
         </div>
 
         <div class="header_content">
-            <p class="header_eyebrow">Portfolio</p>
-            <h1 class="header_name">Noah Read</h1>
-            <p class="header_tagline">Data Scientist &amp; Engineer</p>
+            <h1 class="header_name">Tennis Match Forecasting</h1>
         </div>
 
         <nav class="nav-bar">
-            <a href="https://noahcread.com" class="nav-link">Projects</a>
-            <a href="/templates/guides.html" class="nav-link">Guides</a>
-            <a href="/templates/about.html" class="nav-link">About</a>
+            <a href="/index.html" class="nav-link">Projects</a>
+            <a href="/guides/index.html" class="nav-link">Guides</a>
+            <a href="/about/index.html" class="nav-link">About</a>
         </nav>
-    </header>       
+    </header>
 
     <main>
-        <div class="section_header">
-            <h2>Guides</h2>
+        <div class="thesis_mobile">
+            <a href="/Read_Thesis_01.pdf#toolbar=0&scrollbar=1&navpanes=0&view=FitH" target="_blank">Open Thesis PDF</a>
         </div>
 
-        <!-- <div class="purpose">
+        <div class="purpose">
             <h3>
-                Amidst the prevalence of large language models serving as omnipotent guides, I wanted to make an effort to steer away and write my own 
-                collection of guides covering topics that I have researched and find interesting, or topics that I chase after again
-                and again to remember certain syntax. Rather than duplicate my research efforts, these guides will serve as accessible
-                references for me, and possibly others.
+                Tennis is a fascinating sport to analyze and statistically model. Not only is it a zero-sum game, there are also key pieces of information known 
+                before each match starts that may <i>significantly</i> influence the outcome. For example, we know what level the match is 
+                (Challenger event, ATP/WTA 1000, Grand Slam, etc.) and we know what surface the match will be played on (indoor/outdoor hard, clay, grass). Roger
+                Federer would have a higher probability of beating Rafael Nadal on grass, and the opposite on clay. Paired with
+                time-variant historical information regarding each player's stats at the given level on the given surface, a forecast isn't necessarily a total toss-up.
+                <br><br>
+                My Master's thesis strives to create an Adaptive Least Squares forecasting model with Kalman filtering to generate probabilities of winning for professional 
+                tennis players. To do so, a statistical profile of each player was created, allowing each unit of observation (each athlete) to contain features pertaining to 
+                his/her stats as well as the stats of that athlete's historical opponents. This basically serves as "what have I averaged, and what has my upcoming opponent 
+                averaged." Features involving what each player (& the respective opponent) would give up on average were also included. With 4x the baseline number of features, 
+                the feature set was robust.
+                <br><br>
+                The model ultimately achieved an accuracy a few percentage points higher than if winners were chosen strictly by rankings (which is still a fairly strong method). 
+                Any two names along with a corresponding tournament name can be inputted into a program, which ingests two competing player names as well as unique information about 
+                the specific tournament (surface type, level, etc.) and outputs probabilities of winning for each player. Both R and Python were leveraged to bring this project past 
+                the finish line. The entire official document is displayed below.
             </h3>
-        </div> -->
+        </div>
 
-
-        <div class="project_grid">
-
-            <div class="project_card">
-                <a class="project_card_inner" href="/guides/daemons">
-                    <div class="project_title">
-                        <span class="project_number">01</span>
-                        <h3>Daemons in Linux</h3>
-                        <p class="skills">Overview & management of linux daemons on your own machine</p>
-                    </div>
-                    <div class="thesis_img" href="/guides/daemons">
-                        <img src="/assets/daemons.jpg" alt="Linux Background Processes">
-                    </div>
-                </a>
-            </div>
-
-            <div class="project_card">
-                <a class="project_card_inner" href="/guides/uv">
-                    <div class="project_title">
-                        <span class="project_number">02</span>
-                        <h3>uv Package Manager</h3>
-                        <p class="skills">How to use it, common and helpful commands, and much more</p>
-                    </div>
-                    <div class="thesis_img" href="/guides/uv">
-                        <img src="/assets/uv2.png" alt="Astral Logo">
-                    </div>
-                </a>
-            </div>
-
-
+        <div class="thesis_iframe_container">
+            <iframe src="/Read_Thesis_01.pdf#toolbar=0&scrollbar=1&navpanes=0&view=FitH" title="Noah Read Master's Thesis"></iframe>
         </div>
     </main>
 
